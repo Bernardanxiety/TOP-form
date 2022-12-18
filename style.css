@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+
+:root {
+  --green: #596d48;
+  --grey: #e5e7eb;
+
+  --ff-logo: "Rubik Gemstones", cursive;
+}
+
 *,
 *::before,
 *::after {
@@ -6,16 +15,10 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Norse-Bold";
-  font-style: normal;
-  font-weight: bold;
-  src: url("Norse-Bold.otf");
-}
-
 .img-div {
-  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1862&q=80");
+  background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/318657941_718354629424823_2268087021016707682_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=r3q5_gzz5ccAX--Ito5&_nc_oc=AQn1WNy8yHvV_jgjQ6FeongP88CtRRVS2m0Fg3grdtvMNtmPYAyeOw9AK857X4GORSQb5mOVreV1mlvBaEs_8YRL&_nc_ht=scontent-waw1-1.xx&oh=03_AdTYurEE3zflzfLAy45cdOc3r-mXnDNk3GBwfM6QZCRLkg&oe=63C681DB");
   min-height: 300px;
+  background-position-y: 40%;
   background-size: cover;
   display: grid;
   place-items: center;
@@ -29,11 +32,12 @@
   align-items: center;
   padding: 0.75rem 0;
   color: #fff;
-  font-family: "Norse-Bold";
-  font-size: 3rem;
+  font-family: var(--ff-logo);
+  font-size: 2rem;
   gap: 0.5rem;
 }
 
 .odin-img {
-  width: 50px;
+  max-width: 50px;
+  transform: translateY(-4px);
 }
