@@ -129,8 +129,15 @@ button {
   padding: 1rem 1.5rem 2rem;
 }
 
+@media (min-width: 500px) {
+  .form-grid {
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem 5rem;
+  }
+}
+
 /* media */
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .wrapper {
     display: flex;
   }
