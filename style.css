@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: var(--ff-body);
-  font-size: clamp(1.6rem, 1rem + 2vw, 2.5rem);
+  font-size: clamp(1.6rem, 1rem + 1.5vw, 2.5rem);
 }
 
 .margin > :not(:first-child) {
@@ -127,4 +127,19 @@ button {
 
 .signIn {
   padding: 1rem 1.5rem 2rem;
+}
+
+/* media */
+@media (min-width: 700px) {
+  .wrapper {
+    display: flex;
+  }
+
+  .wrapper > * {
+    flex: 1 1 0;
+  }
+
+  .img-div {
+    background-position-x: 50%;
+  }
 }
