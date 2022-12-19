@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Gemstones&display=swap");
 :root {
   --green: #596d48;
   --grey: #e5e7eb;
 
   --ff-logo: "Rubik Gemstones", cursive;
+  --ff-body: "Indie Flower", cursive;
 }
 
 *,
@@ -14,6 +14,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: clamp(1.6rem, 1rem + 2vw, 2.5rem);
+}
+
+.margin > :not(:first-child) {
+  margin-top: var(--margin, 1em);
+}
+
+label,
+input,
+button {
+  font-family: inherit;
+}
+
+button,
+input {
+  appearance: none;
+}
+
+input {
+  padding: 0.25em;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  font-family: sans-serif;
+}
+
+button {
+  padding: 0.35em 1.2em;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+
+label,
+button {
+  letter-spacing: 1px;
+}
+
+/* hero */
 
 .img-div {
   background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/318657941_718354629424823_2268087021016707682_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=r3q5_gzz5ccAX--Ito5&_nc_oc=AQn1WNy8yHvV_jgjQ6FeongP88CtRRVS2m0Fg3grdtvMNtmPYAyeOw9AK857X4GORSQb5mOVreV1mlvBaEs_8YRL&_nc_ht=scontent-waw1-1.xx&oh=03_AdTYurEE3zflzfLAy45cdOc3r-mXnDNk3GBwfM6QZCRLkg&oe=63C681DB");
@@ -40,4 +85,48 @@
 .odin-img {
   max-width: 50px;
   transform: translateY(-4px);
+}
+
+/* content */
+.wrapper_content {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.wrapper_content > * {
+  padding: 1rem;
+}
+
+.content_intro p {
+  --margin: 0.5em;
+}
+
+/* form */
+.content_form {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75em;
+}
+
+.form-div {
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+.signIn {
+  --margin: 2em;
+}
+
+.signIn p {
+  --margin: 0.5em;
+}
+
+.wrapper_content:last-child {
+  padding-bottom: 1rem;
 }
