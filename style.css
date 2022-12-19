@@ -88,13 +88,13 @@ button {
 }
 
 /* content */
+.content_intro {
+  padding: 2rem 1.5rem 1rem;
+}
+
 .wrapper_content {
   background-color: rgba(0, 0, 0, 0.8);
   color: hsla(0, 0%, 100%, 0.7);
-}
-
-.wrapper_content > * {
-  padding: 1rem;
 }
 
 .content_intro p {
@@ -104,7 +104,7 @@ button {
 /* form */
 .content_form {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1.5rem 3rem;
 }
 
 .form-grid {
@@ -125,6 +125,6 @@ button {
   --margin: 0.5em;
 }
 
-.wrapper_content:last-child {
-  padding-bottom: 1rem;
+.signIn {
+  padding: 1rem 1.5rem 2rem;
 }
