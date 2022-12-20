@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: var(--ff-body);
-  font-size: clamp(1.6rem, 1rem + 1.5vw, 2.5rem);
+  font-size: clamp(1.4rem, 1rem + 1.5vw, 2rem);
 }
 
 .margin > :not(:first-child) {
