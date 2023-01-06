@@ -21,7 +21,11 @@ html {
 
 body {
   font-family: var(--ff-body);
-  font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+  font-size: clamp(1.4rem, 1rem + 0.5vw, 2rem);
+}
+
+body .wrapper {
+  min-height: 100vh;
 }
 
 .margin > :not(:first-child) {
@@ -95,6 +99,7 @@ button {
 .wrapper_content {
   background-color: rgba(0, 0, 0, 0.8);
   color: hsla(0, 0%, 100%, 0.7);
+  display: grid;
 }
 
 .content_intro p {
