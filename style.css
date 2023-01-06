@@ -24,6 +24,12 @@ body {
   font-size: clamp(1.4rem, 1rem + 0.5vw, 2rem);
 }
 
+a {
+  color: inherit;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
 body .wrapper {
   min-height: 100vh;
 }
@@ -96,6 +102,12 @@ button {
   padding: 2rem 1.5rem 1rem;
 }
 
+@media (min-width: 500px) {
+  .content_intro > * {
+    width: min(90%, 80rem);
+  }
+}
+
 .wrapper_content {
   background-color: rgba(0, 0, 0, 0.8);
   color: hsla(0, 0%, 100%, 0.7);
@@ -153,5 +165,14 @@ button {
 
   .img-div {
     background-position-x: 50%;
+  }
+
+  .wrapper_content {
+    grid-template-rows: 1fr min-content 1fr;
+  }
+
+  .content_intro {
+    margin-top: auto;
+    margin-bottom: ;
   }
 }
